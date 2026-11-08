@@ -1,5 +1,5 @@
-// The JS is compiled in partial mode, but the emitted declaration has no
-// `static ɵcmp` / `static ɵfac`, so the Angular CLI does not see a component.
+// Prints the built declaration and whether it has the Ivy members the Angular
+// compiler needs to recognize `LibButton` as a standalone component.
 import { readFileSync } from 'node:fs'
 
 const dts = readFileSync('dist/index.d.mts', 'utf8')

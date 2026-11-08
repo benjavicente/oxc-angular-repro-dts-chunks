@@ -3,8 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "repro": "vite build && node check.mjs",
-    "repro:as-asset": "AS_ASSET=1 vite build && node check.mjs"
+    "build": "vite build",
+    "build:as-asset": "AS_ASSET=1 vite build",
+    "consumer": "ngc -p consumer/tsconfig.json",
+    "repro": "npm run build && node check.mjs && npm run consumer",
+    "repro:as-asset": "npm run build:as-asset && node check.mjs && npm run consumer"
   },
   "devDependencies": {
     "@angular/compiler": "22.2.5",

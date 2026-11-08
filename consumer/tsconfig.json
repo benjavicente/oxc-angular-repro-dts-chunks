@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "rootDir": ".",
+    "paths": { "lib-button": ["../dist/index.d.mts"] }
+  },
+  "files": ["app.ts"],
+  "angularCompilerOptions": { "strictTemplates": true }
+}
